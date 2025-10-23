@@ -18,7 +18,7 @@ function App() {
 
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:4000/api/parse", formData, {
+      const res = await axios.post("https://cc-parser-yugc.onrender.com/api/parse", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setResult(res.data.parsed);
