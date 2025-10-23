@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const Statement = require("../models/Statement");
+const Statement = require("../models/Statement")
 
 exports.handleParse = async (req, res) => {
   try {
